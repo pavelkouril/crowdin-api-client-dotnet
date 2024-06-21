@@ -1,4 +1,4 @@
-﻿
+
 using JetBrains.Annotations;
 using Newtonsoft.Json;
 
@@ -8,7 +8,7 @@ namespace Crowdin.Api.SourceFiles
     public class FileInfoCollectionResource : FileResourceBase
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
         
         [JsonProperty("projectId")]
         public int ProjectId { get; set; }
